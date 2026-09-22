@@ -11,11 +11,16 @@ function Hero() {
     <section className="bg-gray-200">
       <div className="mx-auto max-w-7xl px-5 py-4 sm:px-6 lg:px-8 lg:py-8">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+
           {/* LEFT SIDE */}
           <div className="order-1">
+
+            {/* MAIN H1 */}
             <h1 className="text-4xl font-black leading-tight text-slate-900 sm:text-5xl md:text-6xl">
               Welcome to
-              <span className="block text-yellow-500">ROULETTE ZOO GAME</span>
+              <span className="block text-yellow-500">
+                ROULETTE ZOO GAME
+              </span>
             </h1>
 
             {/* MOBILE IMAGE */}
@@ -28,7 +33,7 @@ function Hero() {
               >
                 <img
                   src={gameImage}
-                  alt="Luckywheel777 Game"
+                  alt="RouletteZoo Game"
                   className="mx-auto block w-full max-w-[470px] rounded-2xl object-cover shadow-lg"
                 />
               </a>
@@ -55,7 +60,7 @@ function Hero() {
               and an enjoyable online gaming experience.
             </p>
 
-            {/* DESKTOP BUTTONS ONLY */}
+            {/* DESKTOP BUTTONS */}
             <div className="mt-7 hidden flex-wrap gap-4 lg:flex">
               <a
                 href={downloadUrl}
@@ -85,11 +90,12 @@ function Hero() {
             >
               <img
                 src={gameImage}
-                alt="Luckywheel777 Game"
+                alt="RouletteZoo Game"
                 className="block h-[450px] w-full max-w-[580px] rounded-2xl object-cover shadow-lg transition hover:scale-[1.01]"
               />
             </a>
           </div>
+
         </div>
       </div>
     </section>

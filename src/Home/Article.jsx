@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Article = () => {
@@ -8,9 +7,9 @@ const Article = () => {
 
         {/* Article Header */}
         <div className="mb-12 text-center">
-          <h1 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
             RouletteZoo Game
-          </h1>
+          </h2>
 
           <p className="mx-auto max-w-3xl text-base leading-7 text-gray-600 sm:text-lg">
             Learn more about RouletteZoo Game, its classic gameplay, simple
@@ -264,4 +263,3 @@ const Article = () => {
 };
 
 export default Article;
-

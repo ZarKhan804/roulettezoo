@@ -1,18 +1,18 @@
 import { Helmet } from "react-helmet-async";
 
-import AboutHero from "./AboutHero";
-import AboutContent from "./AboutContent";
+import DownloadHero from "./DownloadHero";
 import InternalLinksArticle from "./InternalLinksArticle";
+import Article from "./Article";
 
-function About() {
+function Download() {
   return (
     <>
       <Helmet>
-        <title>About RouletteZoo | Platform Information & Game Guide</title>
+        <title>RouletteZoo Download Guide | Mobile Access Information</title>
 
         <meta
           name="description"
-          content="Learn about RouletteZoo, its platform information, gaming features, mobile access, account guidance, and responsible gaming tips for users in Pakistan."
+          content="Explore the RouletteZoo download and mobile access guide, compatible device information, application safety, account guidance, and general gaming resources."
         />
 
         <meta
@@ -22,22 +22,22 @@ function About() {
 
         <link
           rel="canonical"
-          href="https://www.roulettezoo.com/about"
+          href="https://www.roulettezoo.com/download"
         />
 
         <meta
           property="og:title"
-          content="About RouletteZoo | Platform Information & Game Guide"
+          content="RouletteZoo Download Guide | Mobile Access Information"
         />
 
         <meta
           property="og:description"
-          content="Explore RouletteZoo platform information, mobile access guidance, account security, and responsible gaming resources."
+          content="Learn about RouletteZoo mobile access, application information, device compatibility, account guidance, and general gaming resources."
         />
 
         <meta
           property="og:url"
-          content="https://www.roulettezoo.com/about"
+          content="https://www.roulettezoo.com/download"
         />
 
         <meta
@@ -52,12 +52,12 @@ function About() {
 
         <meta
           name="twitter:title"
-          content="About RouletteZoo | Platform Information & Game Guide"
+          content="RouletteZoo Download Guide | Mobile Access Information"
         />
 
         <meta
           name="twitter:description"
-          content="Explore RouletteZoo platform information, mobile access guidance, account security, and responsible gaming resources."
+          content="Learn about RouletteZoo mobile access, application information, device compatibility, account guidance, and general gaming resources."
         />
 
         <meta
@@ -67,12 +67,12 @@ function About() {
       </Helmet>
 
       <main id="main-content">
-        <AboutHero />
-        <AboutContent />
+        <DownloadHero />
         <InternalLinksArticle />
+        <Article />
       </main>
     </>
   );
 }
 
-export default About;
+export default Download;

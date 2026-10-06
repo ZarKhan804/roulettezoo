@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://roulettezoo.com/sitemap.xml
+Sitemap: https://www.roulettezoo.com/sitemap.xml
 

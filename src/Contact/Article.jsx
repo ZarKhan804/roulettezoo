@@ -1,100 +1,69 @@
-import { Mail, MessageCircle, Send } from "lucide-react";
+import React from "react";
 
-function Article() {
-  function handleSubmit(e) {
-    e.preventDefault();
-    alert("Message submitted successfully!");
-  }
-
+const Article = () => {
   return (
-    <section className="bg-gray-200">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-2">
-        <div>
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-yellow-600">
-            Contact
-          </p>
-
-          <h2 className="mt-3 text-4xl font-black text-slate-900">
-            We would love to hear from you
+    <section className="bg-gray-200 py-4 sm:py-6">
+      <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <article className="rounded-2xl border border-gray-300 bg-white p-6 shadow-sm sm:p-8">
+          <h2 className="text-2xl font-extrabold text-gray-900 sm:text-3xl">
+            RouletteZoo Contact &amp; Support
           </h2>
 
-          <p className="mt-5 leading-8 text-slate-600">
-            If you have questions, suggestions or feedback about our
-            entertainment platform, use the form and send us a message.
+          <p className="mt-4 text-base leading-8 text-gray-600 sm:text-[17px]">
+            If you need <strong>RouletteZoo Contact</strong> information,
+            this page provides guidance for visitors looking for{" "}
+            <strong>RouletteZoo Contact Us</strong>,{" "}
+            <strong>RouletteZoo Support</strong>, and general website
+            assistance. Visitors can use the contact form to ask questions
+            about website information, account access, gameplay guides, and
+            platform-related topics. If you need help understanding the
+            website or finding relevant resources, describe your question
+            clearly when submitting a message. For{" "}
+            <strong>RouletteZoo Technical Support</strong>,{" "}
+            <strong>RouletteZoo Account Help</strong>,{" "}
+            <strong>RouletteZoo Login Help</strong>, or registration-related
+            questions, provide only the information necessary to explain
+            your issue. Never share your password, verification codes, or
+            sensitive account details through a contact form. Visitors can
+            also explore information about mobile access, platform
+            information, account security, and responsible gaming throughout
+            this website.
           </p>
 
-          <div className="mt-8 space-y-4">
-            <a
-              href="mailto:contact@royalxcasinos777.com"
-              className="flex items-center gap-4 rounded-xl border border-gray-300 bg-white p-4 transition hover:border-yellow-400 hover:shadow-sm"
-            >
-              <Mail className="text-yellow-500" />
-              <span className="text-slate-700">
-                contact@royalxcasinos777.com
-              </span>
-            </a>
+          {/* 14 CONTACT ARTICLE TOPICS */}
+          <div className="mt-8 border-t border-gray-300 pt-6">
+            <h3 className="text-xl font-extrabold text-gray-900 sm:text-2xl">
+              RouletteZoo Contact &amp; Support Articles
+            </h3>
 
-            <div className="flex items-center gap-4 rounded-xl border border-gray-300 bg-white p-4">
-              <MessageCircle className="text-yellow-500" />
-              <span className="text-slate-700">Customer Support</span>
+            <div className="mt-5 grid gap-x-10 gap-y-2 text-base leading-7 text-gray-600 sm:grid-cols-2">
+              {/* LEFT SIDE */}
+              <div className="space-y-2">
+                <p>• RouletteZoo Contact and Support Guide</p>
+                <p>• RouletteZoo Customer Support Information</p>
+                <p>• RouletteZoo Account Help Guide</p>
+                <p>• RouletteZoo Login Help and Common Issues</p>
+                <p>• RouletteZoo Registration Information</p>
+                <p>• RouletteZoo Access Guide</p>
+                <p>• RouletteZoo Mobile Access Information</p>
+              </div>
+
+              {/* RIGHT SIDE */}
+              <div className="space-y-2">
+                <p>• RouletteZoo Payment Information and Safety</p>
+                <p>• RouletteZoo Deposit Information Guide</p>
+                <p>• RouletteZoo Withdrawal Information Guide</p>
+                <p>• RouletteZoo Technical Help Guide</p>
+                <p>• RouletteZoo Frequently Asked Questions</p>
+                <p>• RouletteZoo Platform Features and Information</p>
+                <p>• RouletteZoo User Support Guide</p>
+              </div>
             </div>
           </div>
-        </div>
-
-        <form
-          onSubmit={handleSubmit}
-          className="rounded-2xl border border-gray-300 bg-white p-6 shadow-sm"
-        >
-          <div>
-            <label className="mb-2 block text-sm font-semibold text-slate-800">
-              Name
-            </label>
-
-            <input
-              required
-              type="text"
-              placeholder="Enter your name"
-              className="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-slate-900 outline-none placeholder:text-gray-400 focus:border-yellow-400"
-            />
-          </div>
-
-          <div className="mt-5">
-            <label className="mb-2 block text-sm font-semibold text-slate-800">
-              Email
-            </label>
-
-            <input
-              required
-              type="email"
-              placeholder="Enter your email"
-              className="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-slate-900 outline-none placeholder:text-gray-400 focus:border-yellow-400"
-            />
-          </div>
-
-          <div className="mt-5">
-            <label className="mb-2 block text-sm font-semibold text-slate-800">
-              Message
-            </label>
-
-            <textarea
-              required
-              rows="5"
-              placeholder="Write your message"
-              className="w-full resize-none rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-slate-900 outline-none placeholder:text-gray-400 focus:border-yellow-400"
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-yellow-400 px-5 py-3.5 font-bold text-slate-950 hover:bg-yellow-300"
-          >
-            Send Message
-            <Send size={18} />
-          </button>
-        </form>
+        </article>
       </div>
     </section>
   );
-}
+};
 
 export default Article;

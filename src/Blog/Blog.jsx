@@ -12,7 +12,7 @@ function Blog() {
 
         <meta
           name="description"
-          content="Explore RouletteZoo guides, gameplay information, mobile access tips, account security, platform features, and responsible gaming resources for users in Pakistan."
+          content="Explore RouletteZoo guides, gameplay, mobile access, account security, and gaming resources in Pakistan."
         />
 
         <meta
